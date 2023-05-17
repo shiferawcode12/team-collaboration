@@ -1,13 +1,15 @@
 /*stylesheet/css*/ 
-{
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    color: white;
   }
   body {
     height: 100vh;
     background: linear-gradient(184deg,#8754ff,#8E2DE2);
+      color: white;
   }
   .start-screen,
   .score-container {
@@ -50,6 +52,7 @@
   .header {
     margin-bottom: 1.8em;
     display: flex;
+      background-color: pink;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 0.6em;
@@ -67,6 +70,7 @@
   .question {
     margin-bottom: 1.25em;
     font-weight: 600;
+      color: pink;
   }
   .option-div {
     font-size: 0.9em;
@@ -80,6 +84,7 @@
     border-radius: 0.3em;
   }
   .option-div:disabled {
+      background-color: dryblue;
     color: #000000;
     cursor: not-allowed;
   }

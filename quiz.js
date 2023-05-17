@@ -161,7 +161,6 @@ function checker(userOption) {
         element.disabled = true;
     });
 }
-//initial setup
 function initial() {
     quizContainer.innerHTML = "";
     questionCount = 0;

@@ -36,6 +36,7 @@
   }
   #restart {
     margin-top: 0.9em;
+      color: red;
   }
   #display-container {
     background-color: #ffffff;

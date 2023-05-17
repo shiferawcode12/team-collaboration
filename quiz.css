@@ -101,6 +101,7 @@
   }
   .hide {
     display: none;
+      text-align: center;
   }
   .incorrect {
     background-color: #ffdde0;

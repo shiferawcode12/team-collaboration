@@ -27,9 +27,9 @@
   }
   #start-button,
   #restart {
-    font-size: 1.3em;
-    padding: 0.5em 1.8em;
-    border-radius: 0.2em;
+    font-size: 1.4em;
+    padding: 0.6em 1.9em;
+    border-radius: 0.3em;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
   }
   #restart {

@@ -74,7 +74,7 @@ const quizArray = [
         correct: "HTTP/1.0",
     },
 ];
-//Restart Quiz
+
 restart.addEventListener("click", () => {
     initial();
     displayContainer.classList.remove("hide");

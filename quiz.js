@@ -81,10 +81,8 @@ restart.addEventListener("click", () => {
 nextBtn.addEventListener(
     "click",
     (displayNext = () => {
-        //increment questionCount
         questionCount += 1;
         if (questionCount == quizArray.length) {
-            //hide question container and display score
             displayContainer.classList.add("hide");
             scoreContainer.classList.remove("hide");
             userScore.innerHTML =
@@ -167,13 +165,11 @@ function initial() {
     quizCreator();
     quizDisplay(questionCount);
 }
-//when user click on start button
 startButton.addEventListener("click", () => {
     startScreen.classList.add("hide");
     displayContainer.classList.remove("hide");
     initial();
 });
-//hide quiz and display start screen
 window.onload = () => {
     startScreen.classList.remove("hide");
     displayContainer.classList.add("hide");

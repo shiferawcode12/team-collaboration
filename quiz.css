@@ -39,7 +39,7 @@
     background-color: #ffffff;
     padding: 3.1em 1.8em;
     width: 80%;
-    max-width: 37.5em;
+    max-width: 40.5em;
     margin: 0 auto;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -58,7 +58,7 @@
   .timer-div {
     background-color: #e1f5fe;
     width: 7.5em;
-    border-radius: 1.8em;
+    border-radius: 1.9em;
     display: flex;
     align-items: center;
     justify-content: space-between;

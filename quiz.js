@@ -69,9 +69,9 @@ const quizArray = [
     },
     {
         id: "9",
-        question: "Which of the following is not a valid domain name?",
-        options: ["www.yahoo.com", "www.yahoo.co.uk", "www.com.yahoo", "www.yahoo.co.in"],
-        correct: "www.com.yahoo",
+        question: "The first http version is?",
+        options: ["HTTP/0.9", "HTTP/1.1", "HTTP/1.0", "HTTP/1.02"],
+        correct: "HTTP/1.0",
     },
 ];
 //Restart Quiz

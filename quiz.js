@@ -12,7 +12,6 @@ let questionCount;
 let scoreCount = 0;
 let count = 11;
 let countdown;
-//Questions and Options array
 const quizArray = [
     {
         id: "0",
@@ -115,11 +114,9 @@ const timerDisplay = () => {
 };
 const quizDisplay = (questionCount) => {
     let quizCards = document.querySelectorAll(".container-mid");
-    //Hide other cards
     quizCards.forEach((card) => {
         card.classList.add("hide");
     });
-    //display current question card
     quizCards[questionCount].classList.remove("hide");
 };
 function quizCreator() {
@@ -142,26 +139,22 @@ function quizCreator() {
         quizContainer.appendChild(div);
     }
 }
-//Checker Function to check if option is correct or not
 function checker(userOption) {
     let userSolution = userOption.innerText;
     let question =
         document.getElementsByClassName("container-mid")[questionCount];
     let options = question.querySelectorAll(".option-div");
-    //if user clicked answer == correct option stored in object
     if (userSolution === quizArray[questionCount].correct) {
         userOption.classList.add("correct");
         scoreCount++;
     } else {
         userOption.classList.add("incorrect");
-        //For marking the correct option
         options.forEach((element) => {
             if (element.innerText == quizArray[questionCount].correct) {
                 element.classList.add("correct");
             }
         });
     }
-    //clear interval(stop timer)
     clearInterval(countdown);
     //disable all options
     options.forEach((element) => {

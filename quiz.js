@@ -80,7 +80,6 @@ restart.addEventListener("click", () => {
     displayContainer.classList.remove("hide");
     scoreContainer.classList.add("hide");
 });
-//Next Button
 nextBtn.addEventListener(
     "click",
     (displayNext = () => {
@@ -95,7 +94,6 @@ nextBtn.addEventListener(
             userScore.innerHTML =
                 "Your score is " + scoreCount + " out of " + questionCount;
         } else {
-            //display questionCount
             countOfQuestion.innerHTML =
                 questionCount + 1 + " of " + quizArray.length + " Question";
             //display quiz
@@ -106,7 +104,6 @@ nextBtn.addEventListener(
         }
     })
 );
-//Timer
 const timerDisplay = () => {
     countdown = setInterval(() => {
         count--;
@@ -117,7 +114,6 @@ const timerDisplay = () => {
         }
     }, 1000);
 };
-//Display quiz
 const quizDisplay = (questionCount) => {
     let quizCards = document.querySelectorAll(".container-mid");
     //Hide other cards

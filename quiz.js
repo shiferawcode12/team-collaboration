@@ -83,18 +83,15 @@ nextBtn.addEventListener(
     (displayNext = () => {
         //increment questionCount
         questionCount += 1;
-        //if last question
         if (questionCount == quizArray.length) {
             //hide question container and display score
             displayContainer.classList.add("hide");
             scoreContainer.classList.remove("hide");
-            //user score
             userScore.innerHTML =
                 "Your score is " + scoreCount + " out of " + questionCount;
         } else {
             countOfQuestion.innerHTML =
                 questionCount + 1 + " of " + quizArray.length + " Question";
-            //display quiz
             quizDisplay(questionCount);
             count = 11;
             clearInterval(countdown);
@@ -156,7 +153,6 @@ function checker(userOption) {
         });
     }
     clearInterval(countdown);
-    //disable all options
     options.forEach((element) => {
         element.disabled = true;
     });

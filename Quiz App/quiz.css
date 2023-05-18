@@ -23,6 +23,7 @@
     border: none;
     outline: none;
     cursor: pointer;
+      color: red;
   }
   #start-button,
   #restart {

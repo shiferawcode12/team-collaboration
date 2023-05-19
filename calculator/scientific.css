@@ -44,6 +44,7 @@
     margin: auto;
     width: 200px;
     height: 100px;
+    border-radius: 12%;
   }
   .btnMath {
     color: white;

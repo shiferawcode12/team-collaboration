@@ -1,0 +1,46 @@
+body {
+    background-color: #f8c6c6;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+.button-container {
+    margin-top: 50px;
+}
+
+.btn {
+    padding: 20px 40px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.rock-btn {
+    background-color: #f44336;
+    color: white;
+    margin-right: 20px;
+}
+
+.paper-btn {
+    background-color: #4CAF50;
+    color: white;
+    margin-right: 20px;
+}
+
+.scissors-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+#result {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 50px;
+}

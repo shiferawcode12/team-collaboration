@@ -38,6 +38,7 @@ h1 {
 .scissors-btn {
     background-color: #2196F3;
     color: white;
+    border: 0;
 }
 
 #result {

@@ -1,6 +1,5 @@
 body {
-    background-color: #f8c6c6;
-    color: aliceblue;
+    background-color: #c6f8e3;
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
@@ -9,13 +8,10 @@ body {
 
 h1 {
     margin-top: 50px;
-    font-size: 10px;
-    border-radius: 0%;
 }
 
 .button-container {
-    margin-top: 50px;
-    font-style: normal;
+    margin-top: 60px;
 }
 
 .btn {
@@ -47,5 +43,4 @@ h1 {
     font-size: 2em;
     font-weight: bold;
     margin-top: 50px;
-    font-family: serif;
 }

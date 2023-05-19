@@ -12,7 +12,6 @@ let questionCount;
 let scoreCount = 0;
 let count = 11;
 let countdown;
-//Questions and Options array
 const quizArray = [
     {
         id: "0",
@@ -74,13 +73,11 @@ const quizArray = [
         correct: "www.com.yahoo",
     },
 ];
-//Restart Quiz
 restart.addEventListener("click", () => {
     initial();
     displayContainer.classList.remove("hide");
     scoreContainer.classList.add("hide");
 });
-//Next Button
 nextBtn.addEventListener(
     "click",
     (displayNext = () => {
@@ -88,14 +85,11 @@ nextBtn.addEventListener(
         if (questionCount == quizArray.length) {
             displayContainer.classList.add("hide");
             scoreContainer.classList.remove("hide");
-            //user score
             userScore.innerHTML =
                 "Your score is " + scoreCount + " out of " + questionCount;
         } else {
-            //display questionCount
             countOfQuestion.innerHTML =
                 questionCount + 1 + " of " + quizArray.length + " Question";
-            //display quiz
             quizDisplay(questionCount);
             count = 11;
             clearInterval(countdown);
@@ -140,33 +134,27 @@ function quizCreator() {
         quizContainer.appendChild(div);
     }
 }
-//Checker Function to check if option is correct or not
 function checker(userOption) {
     let userSolution = userOption.innerText;
     let question =
         document.getElementsByClassName("container-mid")[questionCount];
     let options = question.querySelectorAll(".option-div");
-    //if user clicked answer == correct option stored in object
     if (userSolution === quizArray[questionCount].correct) {
         userOption.classList.add("correct");
         scoreCount++;
     } else {
         userOption.classList.add("incorrect");
-        //For marking the correct option
         options.forEach((element) => {
             if (element.innerText == quizArray[questionCount].correct) {
                 element.classList.add("correct");
             }
         });
     }
-    //clear interval(stop timer)
     clearInterval(countdown);
-    //disable all options
     options.forEach((element) => {
         element.disabled = true;
     });
 }
-//initial setup
 function initial() {
     quizContainer.innerHTML = "";
     questionCount = 0;
@@ -177,13 +165,11 @@ function initial() {
     quizCreator();
     quizDisplay(questionCount);
 }
-//when user click on start button
 startButton.addEventListener("click", () => {
     startScreen.classList.add("hide");
     displayContainer.classList.remove("hide");
     initial();
 });
-//hide quiz and display start screen
 window.onload = () => {
     startScreen.classList.remove("hide");
     displayContainer.classList.add("hide");

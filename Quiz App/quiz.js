@@ -84,11 +84,8 @@ restart.addEventListener("click", () => {
 nextBtn.addEventListener(
     "click",
     (displayNext = () => {
-        //increment questionCount
         questionCount += 1;
-        //if last question
         if (questionCount == quizArray.length) {
-            //hide question container and display score
             displayContainer.classList.add("hide");
             scoreContainer.classList.remove("hide");
             //user score

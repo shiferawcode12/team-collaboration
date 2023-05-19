@@ -52,25 +52,21 @@ body {
 .display button:not(:last-child) {
 	margin-right: 10px;
 }
-
 .button-row {
 	display: flex;
 	justify-content: center;
 }
-
 .laps {
 	margin-top: 20px;
 	border-top: 1px solid #ccc;
 	padding-top: 20px;
 }
-
 .laps h2 {
 	margin-top: 0;
 	text-align: center;
 	font-size: 2em;
 	color: #333;
 }
-
 .laps ul {
 	list-style: none;
 	padding: 0;
@@ -80,7 +76,6 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-
 .laps li {
 	padding: 10px;
 	margin: 10px;

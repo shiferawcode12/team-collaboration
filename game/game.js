@@ -1,7 +1,6 @@
 
 const choices = ['rock', 'paper', 'scissors'];
 const resultDiv = document.getElementById('result');
-
 function playGame(userChoice) {
     const computerChoice = choices[Math.floor(Math.random() * 3)];
     if (userChoice === computerChoice) {

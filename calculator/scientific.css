@@ -1,6 +1,6 @@
 * {
     padding: 0;
-    margin: 6px;
+    margin: 8px;
     text-align: center;
   }
   body {
@@ -8,13 +8,13 @@
      margin-top: 6em;
      margin-bottom: 4em;
      margin-left: 210px;
-     margin-right: 420px;
+     margin-right: 425px;
   }
   .calculator {
-    width: 450px;
-    height: 430px;
+    width: 500px;
+    height: 400px;
     background-color: #c0c0c0;
-    box-shadow: 0px 0px 0px 15px #666;
+    box-shadow: 0px 0px 0px 14px #666;
     border: 7px solid black;
     border-radius: 10px;
   }

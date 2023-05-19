@@ -95,7 +95,6 @@ body {
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 	animation: appear 0.3s ease;
 }
-
 .laps li:nth-child(odd) {
 	background-color: #E6F9AF;
 }

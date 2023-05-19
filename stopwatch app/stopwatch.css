@@ -96,7 +96,6 @@ body {
 .laps li:nth-child(odd) {
 	background-color: #E6F9AF;
 }
-
 .laps li:last-child {
 	margin-right: 0;
 }

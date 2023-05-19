@@ -9,6 +9,8 @@ body {
 
 h1 {
     margin-top: 50px;
+    font-size: 10px;
+    border-radius: 0%;
 }
 
 .button-container {

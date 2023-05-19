@@ -15,7 +15,7 @@
     height: 400px;
     background-color: #c0c0c0;
     box-shadow: 0px 0px 0px 14px #666;
-    border: 5px solid blue;
+    border: 5px solid rgb(0, 195, 255);
     border-radius: 8px;
   }
   #display {
@@ -55,7 +55,7 @@
   }
   .btnOpps {
     color: white;
-    background-color: #ff9933;
+    background-color: #ff33dd;
     font-size: 44px;
     margin: auto;
     width: 100px;

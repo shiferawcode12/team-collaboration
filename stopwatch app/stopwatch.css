@@ -6,7 +6,7 @@ body {
 .stopwatch {
 	background-color: #e6309a;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 15px;
 	max-width: 600px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
@@ -27,7 +27,7 @@ body {
 
 .display p {
 	font-size: 4em;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	color: #333;
 	position: relative;
 }
